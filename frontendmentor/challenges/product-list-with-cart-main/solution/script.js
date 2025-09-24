@@ -1,5 +1,4 @@
 document.body.onload = createFoodItemList();
-
 // addElement function takes an item as parameter
 // the addElement function calls other functions to create the required sub components
 // styling is done via classes

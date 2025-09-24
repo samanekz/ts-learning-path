@@ -1,64 +1,3 @@
-:root {
-  --clr-Red: 14, 86%, 42%;
-  --clr-Green: 159, 69%, 38%;
-
-  --clr-Rose-50: 20, 50%, 98%;
-  --clr-Rose-100: 13, 31%, 94%;
-  --clr-Rose-300: 14, 25%, 72%;
-  --clr-Rose-400: 7, 20%, 60%;
-  --clr-Rose-500: 12, 20%, 44%;
-  --clr-Rose-900: 14, 65%, 9%;
-
-  --ff-primary: "Barlow Semi Condensed", sans-serif;
-
-  --fs-300: 13px;
-  --fs-400: 14px;
-  --fs-500: 16px; /*product names*/
-  --fs-600: 20px;
-
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-600: 600;
-  --fw-700: 700;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-h3,
-p,
-blockquote {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  width: 1.75rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-}
-
-body {
-  /* display: grid;
-  min-height: 100vh;
-  place-content: center; */
-
-  font-family: var(--ff-primary);
-  font-weight: var(--fw-300);
-
-  background-color: hsl(var(--clr-Rose-50));
-}
-
-h2 {
-  font-weight: var(--fw-600);
-}
 
 .food-item-list-container-grid {
   display: grid;
@@ -136,4 +75,8 @@ h2 {
 .add-button > span {
   font-size: hsl(--fs-300);
   font-weight: var(--fw-500);
+}
+
+.hidden {
+  display: none;
 }

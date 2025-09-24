@@ -1,0 +1,87 @@
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+
+  --clr-Rose-50: hsl(20, 50%, 98%);
+  --clr-Rose-100: hsl(13, 31%, 94%);
+  --clr-Rose-300: hsl(14, 25%, 72%);
+  --clr-Rose-400: hsl(7, 20%, 60%);
+  --clr-Rose-500: hsl(12, 20%, 44%);
+  --clr-Rose-900: hsl(14, 65%, 9%);
+
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+  --fs-300: 13px;
+  --fs-400: 14px;
+  --fs-500: 16px; /*product names*/
+  --fs-600: 20px;
+
+  --font-normal: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+body {
+  /* display: grid;
+  min-height: 100vh;
+  place-content: center; */
+  font-family: "Red Hat Text", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: var(--rose-900);
+  background-color: var(--rose-50);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* #item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+} */
