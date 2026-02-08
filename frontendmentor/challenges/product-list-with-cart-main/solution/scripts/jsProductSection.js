@@ -1,6 +1,6 @@
 import { updateCartSection } from "./cartSection.js";
 
-export const cartList = [];
+export let cartList = [];
 
 export function findCartItem(productName) {
   const cartItem = cartList.find((cart) => cart.name === productName);
@@ -8,13 +8,14 @@ export function findCartItem(productName) {
   return cartItem;
 }
 
-export function addToCart(productName, productPrice) {
+export function addToCart(productName, productPrice, productImg) {
   const cartItem = findCartItem(productName);
   if (!cartItem) {
     cartList.push({
       name: productName,
       quantity: 1,
       price: productPrice,
+      img: productImg,
     });
   }
   updateCartSection();
@@ -56,4 +57,11 @@ export function fillQuantityText(product, productName) {
   } else {
     product.classList.remove("selected");
   }
+}
+
+export function calculateTotalCartPrice(cartList) {
+  return cartList.reduce(
+    (total, cartItem) => total + cartItem.quantity * cartItem.price,
+    0
+  );
 }

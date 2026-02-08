@@ -119,11 +119,12 @@ function createProductAddToCArtBtn() {
   productAddToCartBtn.addEventListener("click", (e) => {
     const product = e.target.closest(".product");
     const productName = product.dataset.product;
+    const productImg = product.querySelector(".product__img").src;
     const productPrice = product
       .querySelector(".product__price")
       .textContent.replace("$", "")
       .trim();
-    addToCart(productName, productPrice);
+    addToCart(productName, productPrice, productImg);
     product.classList.add("selected");
     fillQuantityText(product, productName);
   });

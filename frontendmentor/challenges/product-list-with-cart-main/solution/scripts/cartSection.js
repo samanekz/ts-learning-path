@@ -1,4 +1,5 @@
-import { cartList } from "./jsProductSection.js";
+import { cartList, calculateTotalCartPrice } from "./jsProductSection.js";
+import { renderOrderConfirmation } from "./orderConfirmation.js";
 import { updateProductSection } from "./productSection.js";
 
 export function renderCartSection() {
@@ -167,13 +168,7 @@ function confirmOrderButton() {
   const confirmOrderBtn = document.createElement("button");
   confirmOrderBtn.classList.add("cart__confirm-order-button");
   confirmOrderBtn.textContent = "Confirm Order";
+  confirmOrderBtn.addEventListener("click", () => renderOrderConfirmation());
 
   return confirmOrderBtn;
-}
-
-function calculateTotalCartPrice(cartList) {
-  return cartList.reduce(
-    (total, cartItem) => total + cartItem.quantity * cartItem.price,
-    0
-  );
 }

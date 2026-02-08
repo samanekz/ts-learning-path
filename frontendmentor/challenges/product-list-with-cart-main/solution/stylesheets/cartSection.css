@@ -117,3 +117,18 @@
   border-radius: 1.75rem;
 }
 
+@media (max-width: 1300px) {
+  .cart {
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .cart__delivery-message {
+    font-size: 0.875rem;
+  }
+
+  .cart__delivery-message > img {
+    margin-right: 0.125rem;
+  }
+}
